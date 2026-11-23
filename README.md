@@ -23,6 +23,9 @@ window.loadProposal(...) in the unchanged proposal tool
 The proposal tool (`challenge-generator.html`) is used **unchanged**. The app serves it at `/tool` and
 fills it through its own `loadProposal` entry point.
 
+**Write-up:** [`docs/Meridian_Proposal_Assistant_Writeup_Rebecca_Cook.pdf`](docs/Meridian_Proposal_Assistant_Writeup_Rebecca_Cook.pdf)
+covers the design, why an LLM was used, testing and model choice, the assumptions to confirm, limitations and next steps.
+
 ## Run it
 
 You need Python 3.10 or newer (built and tested on 3.13) and an Anthropic API key.
@@ -38,7 +41,8 @@ uvicorn backend.main:app --reload
 Then open **http://localhost:8000**.
 
 - **Challenge pack location:** the app expects the challenge pack in a sibling folder called
-  `meridian-ai-challenge 2/`. If it's elsewhere, set `CHALLENGE_DIR` in `.env`.
+  `meridian-ai-challenge 2/`. The submitted zip already has this layout, so unzip and run from
+  `meridian-proposal-agent/`. If the pack is elsewhere, set `CHALLENGE_DIR` in `.env`.
 - **Workspace ID:** if your key isn't tied to one workspace, the API asks for an
   `anthropic-workspace-id`. Set `ANTHROPIC_WORKSPACE_ID` in `.env`.
 - **Model:** the default is `claude-haiku-5-5`, chosen from the evaluation below. Set `CLAUDE_MODEL`
@@ -110,6 +114,7 @@ backend/
 frontend/        plain HTML/CSS/JS
 tests/           pytest unit tests
 eval/            evaluation script and test cases
+docs/            write-up (PDF) and the script that generates it
 ```
 
 ## API
