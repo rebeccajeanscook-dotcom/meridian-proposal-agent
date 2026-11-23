@@ -23,8 +23,9 @@ window.loadProposal(...) in the unchanged proposal tool
 The proposal tool (`challenge-generator.html`) is used **unchanged**. The app serves it at `/tool` and
 fills it through its own `loadProposal` entry point.
 
-**Write-up:** [`docs/Meridian_Proposal_Assistant_Writeup_Rebecca_Cook.pdf`](docs/Meridian_Proposal_Assistant_Writeup_Rebecca_Cook.pdf)
-covers the design, why an LLM was used, testing and model choice, the assumptions to confirm, limitations and next steps.
+**Write-up:** a separate PDF (*Meridian_Proposal_Assistant_Writeup_Rebecca_Cook.pdf*), submitted alongside
+this code, covers the design, why an LLM was used, testing and model choice, the assumptions to confirm,
+limitations and next steps.
 
 ## Run it
 
@@ -114,7 +115,6 @@ backend/
 frontend/        plain HTML/CSS/JS
 tests/           pytest unit tests
 eval/            evaluation script and test cases
-docs/            write-up (PDF) and the script that generates it
 ```
 
 ## API
