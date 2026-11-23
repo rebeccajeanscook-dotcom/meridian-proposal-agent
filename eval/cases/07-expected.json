@@ -1,0 +1,26 @@
+{
+  "clientName": "Kestrel Logistics (Pty) Ltd",
+  "introGreetTo": "advisor",
+  "financialPlanner": "Priya Naidoo",
+  "applyModel": "global-growth",
+  "goalAssessment": {
+    "clientType": "Company",
+    "mandateType": "Discretionary",
+    "currency": "USD"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "800000"
+    }
+  },
+  "objective": {
+    "riskProfileCategory": "Aggressive",
+    "investmentHorizon": "5 years+"
+  },
+  "fees": {
+    "advisorFee": "0.65"
+  },
+  "_mustBeMissing": [
+    "strategy.keyFigures.incomeValue"
+  ]
+}

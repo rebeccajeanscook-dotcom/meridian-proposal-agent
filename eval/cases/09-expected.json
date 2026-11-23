@@ -1,0 +1,25 @@
+{
+  "clientName": "Dr Ayesha Patel",
+  "applyModel": "balanced",
+  "goalAssessment": {
+    "clientType": "Individual",
+    "mandateType": "Discretionary",
+    "currency": "ZAR"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "12500000"
+    }
+  },
+  "objective": {
+    "riskProfileCategory": "Moderately Aggressive",
+    "investmentHorizon": "5 years+",
+    "targetReturn": "CPI + 5%"
+  },
+  "fees": {
+    "advisorFee": "0.75"
+  },
+  "replacements": {
+    "isReplacement": true
+  }
+}

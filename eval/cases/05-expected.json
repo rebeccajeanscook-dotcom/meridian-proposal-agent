@@ -1,0 +1,23 @@
+{
+  "clientName": "Mrs Thandi Mokoena",
+  "introGreetTo": "client",
+  "applyModel": "income",
+  "goalAssessment": {
+    "clientType": "Individual",
+    "mandateType": "Discretionary",
+    "currency": "ZAR"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "3000000",
+      "incomeValue": "20000"
+    }
+  },
+  "objective": {
+    "riskProfileCategory": "Conservative",
+    "investmentHorizon": "5 years+"
+  },
+  "fees": {
+    "advisorFee": "0.50"
+  }
+}

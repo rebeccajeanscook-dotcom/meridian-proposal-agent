@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridian — Notes to Proposal</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Meridian Private Clients · Notes to Proposal</span>
+    <span class="status" id="status"></span>
+  </header>
+
+  <main class="page">
+
+    <!-- 1. Input -->
+    <section class="stage" id="stage-input">
+      <h2><span class="num">1</span> Input — notes or voice note</h2>
+      <div class="row-inline">
+        <select id="sampleSelect"><option value="">Load a sample note…</option></select>
+        <button class="btn rec" id="recordBtn" type="button">● Record voice note</button>
+        <label class="file-btn">Upload voice note
+          <input type="file" id="audioFile" accept="audio/*,.m4a,.mp3,.wav,.ogg,.webm,.aac" hidden>
+        </label>
+      </div>
+      <textarea id="notes" rows="9" placeholder="Paste or type the PM's meeting notes here…"></textarea>
+      <p class="note" id="transcriptNote" hidden>Transcribed locally with Whisper. Fix anything that was misheard before running.</p>
+      <button class="btn primary" id="extractBtn">Run extraction</button>
+      <span class="working" id="inputWorking" hidden>Working…</span>
+    </section>
+
+    <!-- 2. Raw Claude output -->
+    <section class="stage" id="stage-raw" hidden>
+      <h2><span class="num">2</span> Claude extraction (raw)</h2>
+      <p class="explain">Claude reads the notes and returns every field as <code>{value, source, evidence}</code> through a forced tool call. Nothing is trusted yet.</p>
+      <details><summary>Show raw JSON from Claude</summary><pre id="rawJson"></pre></details>
+      <div class="flags" id="flags" hidden></div>
+    </section>
+
+    <!-- 3. Follow-up questions -->
+    <section class="stage" id="stage-questions" hidden>
+      <h2><span class="num">3</span> Follow-up questions <span class="count" id="qCount"></span></h2>
+      <p class="explain">Key fields that are still missing after the rules are asked one at a time, in priority order.</p>
+      <ul class="answered" id="answered"></ul>
+      <div class="qcard" id="qcard">
+        <p class="qtext" id="qText"></p>
+        <div class="options" id="qOptions"></div>
+        <form id="qForm" class="row-inline">
+          <input id="qInput" autocomplete="off">
+          <button class="btn primary" type="submit">Answer</button>
+        </form>
+        <p class="error" id="qError" hidden></p>
+        <button class="btn plain" id="qSkip">Don't know yet → mark TO CONFIRM</button>
+      </div>
+      <p class="done-msg" id="qDone" hidden>All key fields are answered or marked TO CONFIRM.</p>
+    </section>
+
+    <!-- 4. Fields after rules -->
+    <section class="stage" id="stage-fields" hidden>
+      <h2><span class="num">4</span> Fields after rules &amp; review</h2>
+      <p class="explain">Python rules convert Claude's values into the exact formats the tool accepts. Every value keeps its source. Edit any value; edits are re-checked by the same rules.</p>
+      <div class="checks" id="checks" hidden></div>
+      <table class="fields">
+        <thead><tr><th>Field</th><th>Claude returned</th><th>Tool value</th><th>Source</th><th>Evidence / reason</th></tr></thead>
+        <tbody id="fieldRows"></tbody>
+      </table>
+    </section>
+
+    <!-- 5. Narrative -->
+    <section class="stage" id="stage-text" hidden>
+      <h2><span class="num">5</span> Proposal text (AI-drafted)</h2>
+      <p class="explain">A second Claude call writes the prose from the confirmed fields only. Editable.</p>
+      <label for="needsText">Client needs &amp; objectives</label>
+      <textarea id="needsText" rows="6"></textarea>
+      <label for="riskText">Risk profile</label>
+      <textarea id="riskText" rows="3"></textarea>
+      <button class="btn" id="textBtn">Write text</button>
+      <span class="working" id="textWorking" hidden>Working…</span>
+    </section>
+
+    <!-- 6. Output -->
+    <section class="stage" id="stage-output" hidden>
+      <h2><span class="num">6</span> Output → <code>window.loadProposal()</code></h2>
+      <p class="explain">The object handed to the existing proposal tool. Amounts go under <code>strategy.keyFigures</code>; open items are listed as <code>[TO CONFIRM: …]</code> in the needs text.</p>
+      <div class="checks" id="checksOut" hidden></div>
+      <pre id="proposalJson"></pre>
+      <button class="btn primary" id="openToolBtn">Open in proposal tool</button>
+      <button class="btn" id="downloadBtn">Download JSON</button>
+      <button class="btn plain" id="restartBtn">Start over</button>
+    </section>
+
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

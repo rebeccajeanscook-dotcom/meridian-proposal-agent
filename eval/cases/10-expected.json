@@ -1,0 +1,23 @@
+{
+  "clientName": "The Smit Family Trust",
+  "goalAssessment": {
+    "clientType": "Trust",
+    "mandateType": "Discretionary",
+    "currency": "ZAR"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "7000000"
+    }
+  },
+  "objective": {
+    "riskProfileCategory": "Moderate",
+    "investmentHorizon": "5 years+"
+  },
+  "fees": {
+    "advisorFee": "0.60"
+  },
+  "_mustBeMissing": [
+    "applyModel"
+  ]
+}

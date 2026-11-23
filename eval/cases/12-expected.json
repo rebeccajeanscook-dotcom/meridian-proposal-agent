@@ -1,0 +1,22 @@
+{
+  "clientName": "Mrs N. Dlamini",
+  "applyModel": "income",
+  "goalAssessment": {
+    "clientType": "Individual",
+    "mandateType": "Discretionary",
+    "currency": "ZAR"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "1800000",
+      "incomeValue": "12000"
+    }
+  },
+  "objective": {
+    "riskProfileCategory": "Conservative",
+    "investmentHorizon": "5 years+"
+  },
+  "fees": {
+    "advisorFee": "0.60"
+  }
+}

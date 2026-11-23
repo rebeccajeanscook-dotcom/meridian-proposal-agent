@@ -1,0 +1,117 @@
+model,case,run,check,field,expected,got,ok
+claude-sonnet-5-5,01-notes-retiree-income,1,match,clientName,Mr George Whitfield,Mr George Whitfield,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,introGreetTo,client,client,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,applyModel,income,income,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,strategy.keyFigures.totalInvestment,6200000,,False
+claude-sonnet-5-5,01-notes-retiree-income,1,match,strategy.keyFigures.incomeValue,28000,28000,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,objective.riskProfileCategory,Moderately Conservative,Moderately Conservative,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,01-notes-retiree-income,1,match,fees.advisorFee,0.60,0.60,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,clientName,The Sithole Family Trust,The Sithole Family Trust,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,introGreetTo,advisor,advisor,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,financialPlanner,Marcus Reid,Marcus Reid,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,applyModel,global-growth,global-growth,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,goalAssessment.clientType,Trust,Trust,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,goalAssessment.currency,USD,USD,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,strategy.keyFigures.totalInvestment,1200000,1200000,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,objective.riskProfileCategory,Aggressive,Aggressive,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,fees.advisorFee,0.50,0.50,True
+claude-sonnet-5-5,02-notes-growth-offshore,1,match,replacements.isReplacement,True,True,True
+claude-sonnet-5-5,03-notes-sparse,1,match,clientName,Mrs Lindiwe Petersen,Mrs Lindiwe Petersen,True
+claude-sonnet-5-5,03-notes-sparse,1,match,introGreetTo,client,client,True
+claude-sonnet-5-5,03-notes-sparse,1,match,applyModel,balanced,balanced,True
+claude-sonnet-5-5,03-notes-sparse,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,03-notes-sparse,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,clientName,Johannes Coetzee,Johannes Coetzee,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,introGreetTo,client,client,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,applyModel,balanced,balanced,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,strategy.keyFigures.totalInvestment,4500000,4500000,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,objective.riskProfileCategory,Moderately Aggressive,Moderately Aggressive,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,objective.targetReturn,CPI + 5%,CPI + 5%,True
+claude-sonnet-5-5,04-voice-note-transcript,1,match,fees.advisorFee,0.75,0.75,True
+claude-sonnet-5-5,05-annual-income,1,match,clientName,Mrs Thandi Mokoena,Mrs Thandi Mokoena,True
+claude-sonnet-5-5,05-annual-income,1,match,introGreetTo,client,client,True
+claude-sonnet-5-5,05-annual-income,1,match,applyModel,income,income,True
+claude-sonnet-5-5,05-annual-income,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,05-annual-income,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,05-annual-income,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,05-annual-income,1,match,strategy.keyFigures.totalInvestment,3000000,3000000,True
+claude-sonnet-5-5,05-annual-income,1,match,strategy.keyFigures.incomeValue,20000,20000,True
+claude-sonnet-5-5,05-annual-income,1,match,objective.riskProfileCategory,Conservative,Conservative,True
+claude-sonnet-5-5,05-annual-income,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,05-annual-income,1,match,fees.advisorFee,0.50,0.50,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,clientName,Sipho Ndlovu,Sipho Ndlovu,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,applyModel,balanced,balanced,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,strategy.keyFigures.totalInvestment,2500000,2500000,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,objective.riskProfileCategory,Moderate,Moderate,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,06-voice-self-correction,1,match,fees.advisorFee,0.70,0.70,True
+claude-sonnet-5-5,06-voice-self-correction,1,must_be_missing,strategy.keyFigures.incomeValue,,,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,clientName,Kestrel Logistics (Pty) Ltd,Kestrel Logistics (Pty) Ltd,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,introGreetTo,advisor,advisor,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,financialPlanner,Priya Naidoo,Priya Naidoo,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,applyModel,global-growth,global-growth,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,goalAssessment.clientType,Company,Company,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,goalAssessment.currency,USD,USD,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,strategy.keyFigures.totalInvestment,800000,800000,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,objective.riskProfileCategory,Aggressive,Aggressive,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,07-company-usd-advisor,1,match,fees.advisorFee,0.65,0.65,True
+claude-sonnet-5-5,07-company-usd-advisor,1,must_be_missing,strategy.keyFigures.incomeValue,,,True
+claude-sonnet-5-5,08-hallucination-trap,1,match,clientName,Mr Pieter van Wyk,Mr Pieter van Wyk,True
+claude-sonnet-5-5,08-hallucination-trap,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,08-hallucination-trap,1,must_be_missing,strategy.keyFigures.totalInvestment,,,True
+claude-sonnet-5-5,08-hallucination-trap,1,must_be_missing,strategy.keyFigures.incomeValue,,,True
+claude-sonnet-5-5,08-hallucination-trap,1,must_be_missing,fees.advisorFee,,,True
+claude-sonnet-5-5,08-hallucination-trap,1,must_be_missing,objective.investmentHorizon,,,True
+claude-sonnet-5-5,08-hallucination-trap,1,must_be_missing,objective.targetReturn,,,True
+claude-sonnet-5-5,08-hallucination-trap,1,must_be_missing,goalAssessment.mandateType,,,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,clientName,Dr Ayesha Patel,Dr Ayesha Patel,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,applyModel,balanced,balanced,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,strategy.keyFigures.totalInvestment,12500000,12500000,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,objective.riskProfileCategory,Moderately Aggressive,Moderately Aggressive,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,objective.targetReturn,CPI + 5%,CPI + 5%,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,fees.advisorFee,0.75,0.75,True
+claude-sonnet-5-5,09-replacement-bps-shorthand,1,match,replacements.isReplacement,True,True,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,clientName,The Smit Family Trust,The Smit Family Trust,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,goalAssessment.clientType,Trust,Trust,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,strategy.keyFigures.totalInvestment,7000000,7000000,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,objective.riskProfileCategory,Moderate,Moderate,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,10-unknown-portfolio,1,match,fees.advisorFee,0.60,0.60,True
+claude-sonnet-5-5,10-unknown-portfolio,1,must_be_missing,applyModel,,,True
+claude-sonnet-5-5,11-gbp-expat,1,match,clientName,Mr James Whitaker,Mr James Whitaker,True
+claude-sonnet-5-5,11-gbp-expat,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,11-gbp-expat,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,11-gbp-expat,1,match,goalAssessment.currency,GBP,GBP,True
+claude-sonnet-5-5,11-gbp-expat,1,match,strategy.keyFigures.totalInvestment,600000,600000,True
+claude-sonnet-5-5,11-gbp-expat,1,match,strategy.keyFigures.incomeValue,2000,2000,True
+claude-sonnet-5-5,11-gbp-expat,1,match,objective.investmentHorizon,3 years+,3 years+,True
+claude-sonnet-5-5,11-gbp-expat,1,match,fees.advisorFee,0.80,0.80,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,clientName,Mrs N. Dlamini,Mrs N. Dlamini,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,applyModel,income,income,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,goalAssessment.clientType,Individual,Individual,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,goalAssessment.mandateType,Discretionary,Discretionary,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,goalAssessment.currency,ZAR,ZAR,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,strategy.keyFigures.totalInvestment,1800000,1800000,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,strategy.keyFigures.incomeValue,12000,12000,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,objective.riskProfileCategory,Conservative,Conservative,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,objective.investmentHorizon,5 years+,5 years+,True
+claude-sonnet-5-5,12-terse-shorthand,1,match,fees.advisorFee,0.60,0.60,True

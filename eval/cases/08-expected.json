@@ -1,0 +1,14 @@
+{
+  "clientName": "Mr Pieter van Wyk",
+  "goalAssessment": {
+    "clientType": "Individual"
+  },
+  "_mustBeMissing": [
+    "strategy.keyFigures.totalInvestment",
+    "strategy.keyFigures.incomeValue",
+    "fees.advisorFee",
+    "objective.investmentHorizon",
+    "objective.targetReturn",
+    "goalAssessment.mandateType"
+  ]
+}

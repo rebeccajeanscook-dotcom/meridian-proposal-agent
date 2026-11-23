@@ -1,0 +1,24 @@
+{
+  "clientName": "Sipho Ndlovu",
+  "applyModel": "balanced",
+  "goalAssessment": {
+    "clientType": "Individual",
+    "mandateType": "Discretionary",
+    "currency": "ZAR"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "2500000"
+    }
+  },
+  "objective": {
+    "riskProfileCategory": "Moderate",
+    "investmentHorizon": "5 years+"
+  },
+  "fees": {
+    "advisorFee": "0.70"
+  },
+  "_mustBeMissing": [
+    "strategy.keyFigures.incomeValue"
+  ]
+}

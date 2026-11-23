@@ -1,0 +1,20 @@
+{
+  "clientName": "Mr James Whitaker",
+  "goalAssessment": {
+    "clientType": "Individual",
+    "mandateType": "Discretionary",
+    "currency": "GBP"
+  },
+  "strategy": {
+    "keyFigures": {
+      "totalInvestment": "600000",
+      "incomeValue": "2000"
+    }
+  },
+  "objective": {
+    "investmentHorizon": "3 years+"
+  },
+  "fees": {
+    "advisorFee": "0.80"
+  }
+}
